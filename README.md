@@ -25,7 +25,7 @@ To deploy the resources you must:
    cd gen_ai_setup
    ```
 
-1. Change the variables in the `terraform.tfvars` file to meet your requirements.
+1. Change the variables in the `terraform.tfvars` file to meet your requirements. Do not forget to assign your user to the `ai_launchpad_user` variable.
 
 1. Export the variables for user name and password:
 

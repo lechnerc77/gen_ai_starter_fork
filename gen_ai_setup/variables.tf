@@ -5,9 +5,8 @@ variable "globalaccount" {
 
 variable "create_subaccount" {
   type        = bool
-  description = "Falg if a subaccount should be created."
+  description = "Flag if a subaccount should be created."
   default     = "false"
-
 }
 
 ###
@@ -16,7 +15,7 @@ variable "create_subaccount" {
 variable "subaccount_name" {
   type        = string
   description = "The name of the subaccoun."
-  default     = "My GenAI subaccount."
+  default     = "My GenAI subaccount"
 }
 
 ###
@@ -25,7 +24,7 @@ variable "subaccount_name" {
 variable "subdomain" {
   type        = string
   description = "The subdomain of the subaccount (MUST BE UNIQUE)."
-  default     = "btp-genAI-subaccount."
+  default     = "btp-genAI-subaccount"
 }
 
 
@@ -82,10 +81,10 @@ variable "target_ai_core_model" {
 }
 
 
-# The colleagues who are added to teh AI Core launchpad.
-variable "admins" {
+# The colleagues who are added to the AI Core launchpad.
+variable "ai_launchpad_user" {
   type        = list(string)
-  description = "Defines the colleagues who are added to each subaccount as emergency administrators."
+  description = "Defines the colleagues assigned to the AI launchpad roles."
 }
 
 # The list of rolecollections to be assigned to the users to access the AI Launchpad.
@@ -117,4 +116,3 @@ variable "roles_ai_launchpad" {
     "ailaunchpad_mloperations_viewer_without_genai"
   ]
 }
-

@@ -1,11 +1,8 @@
-# Your global account subdomain
-globalaccount = "xxxxxxxx-xxxxxxx-xxxxxxx-xxxxxxxx-xxxxxx"
-
-# Region for your subaccount
-region = "us10"
-
-# The model that the AI Core service should use
+globalaccount        = "terraformintprod"
+region               = "eu10"
 target_ai_core_model = ["gpt-35-turbo", "text-embedding-ada-002"]
-
-# The  users
-admins = []
+ai_launchpad_user    = ["christian.lechner@sap.com"]
+# Add a value if you want to create the service in an existing subaccount
+subaccount_id = "885feab0-59a4-4640-a94a-b4d352a66bad"
+# Uncomment the following line if subaccount shoud be created
+create_subaccount = true
